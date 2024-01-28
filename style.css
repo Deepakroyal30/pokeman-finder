@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     background-color: ivory; 
+}
+.sticky{
+    width: 100%;
+    height: 200px;
+    z-index: 999;
+    background-color: lavender;
+}
+.honk {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+   
+   
+  }
+header{
+    display: flex;
+    justify-content: center;
+}
+header img{
+    width: 60px;
+    margin: -10px;
+}
+#project_title{
+    margin: 20px;
+    font-size: 50px;
+    color: #fd7d24;
+}
+
+#form_container{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+input{
+    border-radius: 13px;
+    border:4px double orangered
+}
+#submit_btn{
+    border-radius: 12px;
+    background-color:lightgreen;
+    font-weight: 400;
+    border: none;
+    box-shadow: -1px 4px 6px 6px rgba(0, 0, 0, 0.621);
+    color:black ;
+  
+}
+#reset_btn{
+    border-radius: 10px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    box-shadow: -1px 4px 8px 2px rgba(0, 0, 0, 0.593);
+  
+}
+select{
+    border-radius: 12px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    margin-bottom: 5px;
+}
+#searchPokemon{
+    width: 250px;
+    padding:5px;
+    font-size: 16px;
+}
+
+#filter_by_type_container{
+    display: flex;
+    gap: 25px;
+}
+#filter_by_type_container button{
+    font-size: 16px;
+    padding: 5px;
+}
+
+#flip_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin-top: 10px;
+}
+
+.flip_card {
+    background-color: transparent; 
+    width: 200px;
+    height: 275px;
+    perspective: 1000px;   
+     border-radius: 15px;
+  }
+ 
+  .flip_inner_container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+}
+.flip_card:hover .flip_inner_container {
+    transform: rotateY(180deg);
+  }
+
+.flip_card_back, .flip_card_front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+.flip_card_front {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  }
+  .flip_card_back{
+  color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  }
+
+  .firstCaps::first-letter{
+      text-transform: uppercase;
+      font-size: larger;
+  }
+  #type{
+     position: relative;
+     top:15px;
+     left:60px;
+     font-size: 14px;
+     background-color: white;
+     border-radius: 10px;
+    color:black;
+    font-weight: 500;
+    width: 80px;
+    text-transform: uppercase;
+  }
+  #cardId{
+    position: relative;
+    background-color: #fff;
+    bottom:30px;
+    width: 200px;
+  }
+
+  #flying{
+    background-color:rgba(0, 0, 139, 0.611) ;
+  }
+  
+  #grass{
+    background-color: lightskyblue;
+}
+
+#bug {
+    background-color: #729f3f;
+}
+
+#fire {
+    background-color :#fd7d24;
+}
+
+#water {
+    background-color: #4592c4;
+}
+
+#ice {
+    background-color: #51c4e7;
+}
+
+#electric {
+    background-color: #eed535;
+}
+
+#psychic {
+    background-color:  #f366b9;
+}
+
+
+#fairy {
+    background-color: #fdb9e9;
+}
+
+#ghost {
+    background-color: #7b62a3;
+}
+
+#ground {
+    background-color: #c4b135bf;
+}
+
+#poison {
+    background-color: #b01cd9cf;
+}
+
+#fairy {
+    background:linear-gradient(to bottom,lightgreen,lavender);
+}
+
+#normal {
+    background-color: #13a6db;
+}
+
+#dragon {
+    background-color: goldenrod;
+}
+
+#fighting {
+    background-color: #d523aba8;
+}
+
+#rock {
+    background-color: #a38c21;
+}
+#dark{
+    background-color: grey;
+}
+#steel{
+    background-color: brown;
+}
+
+ @media only screen  and (max-width:750px){
+    
+    header img{
+        width:40px;
+    }
+    header{
+        position: relative;
+        left: 20px;
+    }
+ }
